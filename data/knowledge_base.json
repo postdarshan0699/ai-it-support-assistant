@@ -1,0 +1,304 @@
+[
+  {
+    "id": "kb001",
+    "title": "How to reset your VPN password",
+    "category": "Network",
+    "content": "Go to vpn.company.com/reset, enter your employee email, and follow the link sent to your inbox. New passwords must be at least 12 characters. If you don't receive the email within 10 minutes, check your spam folder before raising a ticket."
+  },
+  {
+    "id": "kb002",
+    "title": "Laptop won't connect to office Wi-Fi",
+    "category": "Network",
+    "content": "Forget the 'CompanyWiFi' network in your laptop's Wi-Fi settings, restart the laptop, then reconnect using your employee ID as the username. If the issue persists after two attempts, the access point may need a reset by IT."
+  },
+  {
+    "id": "kb003",
+    "title": "Requesting software installation",
+    "category": "Software",
+    "content": "Standard software (VS Code, Slack, Zoom, Office 365) is available via the Self-Service Portal without approval. Non-standard software requires manager approval submitted through a ticket with the software name and business justification."
+  },
+  {
+    "id": "kb004",
+    "title": "Email not syncing on mobile device",
+    "category": "Email",
+    "content": "Remove the corporate email profile from your phone's account settings and re-add it using the Company Portal app. Ensure your phone's OS is updated to the latest version, as older OS versions are no longer supported for mobile device management."
+  },
+  {
+    "id": "kb005",
+    "title": "Printer not responding",
+    "category": "Hardware",
+    "content": "Check that the printer is powered on and connected to the same network segment as your machine. Restart the print spooler service (Windows: services.msc > Print Spooler > Restart). If the printer still doesn't respond, it may need a driver reinstall."
+  },
+
+  {
+    "id": "kb006",
+    "title": "Password expired",
+    "category": "Account",
+    "content": "If your corporate password has expired, visit the company password portal and select 'Reset Password'. Enter your employee email and complete the identity verification steps. Your new password must be at least 12 characters and cannot match any of your previous five passwords."
+  },
+  {
+    "id": "kb007",
+    "title": "Account locked after multiple login attempts",
+    "category": "Account",
+    "content": "Your account may be temporarily locked after multiple unsuccessful login attempts. Wait 15 minutes and try again with the correct password. If the account remains locked, contact IT Support to request an account unlock."
+  },
+  {
+    "id": "kb008",
+    "title": "How to enable multi-factor authentication",
+    "category": "Security",
+    "content": "Open the Company Security Portal and sign in with your corporate credentials. Select Multi-Factor Authentication and register your mobile device using the authenticator app. Follow the verification prompts to complete enrollment."
+  },
+  {
+    "id": "kb009",
+    "title": "MFA code not working",
+    "category": "Security",
+    "content": "If your authentication code is rejected, verify that your phone's date and time are set automatically. Generate a new code from the authenticator app and try again. If codes continue to fail, contact IT Support to reset your MFA registration."
+  },
+  {
+    "id": "kb010",
+    "title": "VPN connection keeps disconnecting",
+    "category": "Network",
+    "content": "If the VPN disconnects repeatedly, check your internet connection and restart the VPN client. Try connecting from another network if available. If the problem continues, update the VPN client and raise a ticket with the connection logs."
+  },
+  {
+    "id": "kb011",
+    "title": "VPN shows authentication failed",
+    "category": "Network",
+    "content": "An authentication failure usually indicates incorrect credentials, an expired password, or an MFA issue. Verify your corporate username and password, then complete the MFA prompt. If your credentials are correct, contact IT Support for further investigation."
+  },
+  {
+    "id": "kb012",
+    "title": "Cannot access shared network drive",
+    "category": "Network",
+    "content": "Confirm that you are connected to the corporate network or VPN. Restart File Explorer and try accessing the shared drive again. If the drive is still unavailable, verify that your account has permission to access the required folder."
+  },
+  {
+    "id": "kb013",
+    "title": "Slow internet connection",
+    "category": "Network",
+    "content": "Restart your laptop and network connection, then test the connection again. Disconnect unused VPN sessions and close applications that may be consuming significant bandwidth. If the issue affects multiple employees, contact IT Support to check for a network outage."
+  },
+  {
+    "id": "kb014",
+    "title": "Laptop has no internet access",
+    "category": "Network",
+    "content": "Check that Wi-Fi is enabled and airplane mode is turned off. Disconnect and reconnect to the corporate Wi-Fi network. Restart the laptop if necessary. If other devices can connect normally, raise a ticket with your laptop name and network details."
+  },
+  {
+    "id": "kb015",
+    "title": "Bluetooth device won't connect",
+    "category": "Hardware",
+    "content": "Ensure Bluetooth is enabled on your laptop and the device is powered on and discoverable. Remove the device from Bluetooth settings and pair it again. If the device still cannot connect, restart Bluetooth or reboot the laptop."
+  },
+  {
+    "id": "kb016",
+    "title": "Laptop battery draining quickly",
+    "category": "Hardware",
+    "content": "Reduce screen brightness and close applications running in the background. Check Windows battery settings for applications consuming excessive power. If battery life remains significantly reduced, contact IT Support to request a battery health check."
+  },
+  {
+    "id": "kb017",
+    "title": "Laptop is overheating",
+    "category": "Hardware",
+    "content": "Place the laptop on a hard, flat surface and ensure the ventilation openings are not blocked. Close unnecessary applications and restart the laptop. If the laptop continues to overheat or shuts down unexpectedly, contact IT Support for hardware inspection."
+  },
+  {
+    "id": "kb018",
+    "title": "External monitor not detected",
+    "category": "Hardware",
+    "content": "Check that the monitor is powered on and the display cable is securely connected. Select the correct input source on the monitor. On Windows, press Windows + P and select the appropriate display mode. If the monitor is still not detected, try another cable or port."
+  },
+  {
+    "id": "kb019",
+    "title": "Keyboard keys not working",
+    "category": "Hardware",
+    "content": "Restart the laptop and check whether the affected keys work after rebooting. If using an external keyboard, disconnect and reconnect it. Try another USB port if available. Persistent hardware failures should be reported to IT Support."
+  },
+  {
+    "id": "kb020",
+    "title": "Mouse is not responding",
+    "category": "Hardware",
+    "content": "For a wired mouse, disconnect and reconnect the USB cable. For a wireless mouse, replace or recharge the battery and verify that Bluetooth or the wireless receiver is connected. Try another USB port if necessary."
+  },
+  {
+    "id": "kb021",
+    "title": "Microsoft Teams microphone not working",
+    "category": "Collaboration",
+    "content": "Open Teams Settings and select Devices. Confirm that the correct microphone is selected and use the test call option. Check Windows microphone permissions and ensure that another application is not exclusively using the microphone."
+  },
+  {
+    "id": "kb022",
+    "title": "Microsoft Teams camera not working",
+    "category": "Collaboration",
+    "content": "Check that the camera is not physically blocked and that Teams has permission to access it. In Teams Settings, select the correct camera and preview the video. Close other applications that may be using the camera and restart Teams."
+  },
+  {
+    "id": "kb023",
+    "title": "Teams notifications are not appearing",
+    "category": "Collaboration",
+    "content": "Open Teams notification settings and verify that chat, meeting, and activity notifications are enabled. Also check Windows notification settings. Restart Teams after changing the settings."
+  },
+  {
+    "id": "kb024",
+    "title": "Unable to join Teams meeting",
+    "category": "Collaboration",
+    "content": "Verify that your internet connection is working and that Teams is signed in with your corporate account. Try joining the meeting from the Teams web application if the desktop application fails. If the issue continues, contact the meeting organizer or IT Support."
+  },
+  {
+    "id": "kb025",
+    "title": "Outlook is not receiving new emails",
+    "category": "Email",
+    "content": "Check your internet connection and confirm that Outlook is connected to the corporate account. Select Send/Receive to manually synchronize the mailbox. Check whether the mailbox is full and review junk or quarantine folders for missing messages."
+  },
+  {
+    "id": "kb026",
+    "title": "Outlook is running slowly",
+    "category": "Email",
+    "content": "Close unnecessary Outlook windows and restart the application. Archive old emails and remove unnecessary large attachments. If Outlook remains slow, restart the computer and contact IT Support if the issue continues."
+  },
+  {
+    "id": "kb027",
+    "title": "Email attachment cannot be opened",
+    "category": "Email",
+    "content": "Verify that the attachment type is supported and that the file has finished downloading. Save the attachment locally and try opening it again. If the file was blocked for security reasons, contact IT Support rather than attempting to bypass the security controls."
+  },
+  {
+    "id": "kb028",
+    "title": "How to create an email signature",
+    "category": "Email",
+    "content": "In Outlook, open Settings and navigate to Mail > Compose and reply. Create your signature using the approved company format and select whether it should be automatically added to new emails and replies."
+  },
+  {
+    "id": "kb029",
+    "title": "Request access to a shared mailbox",
+    "category": "Access",
+    "content": "Submit an access request through the IT Service Portal. Include the shared mailbox name, required access level, business justification, and manager approval if required. IT will grant access after the request is approved."
+  },
+  {
+    "id": "kb030",
+    "title": "Request access to a company application",
+    "category": "Access",
+    "content": "Submit an application access request through the Self-Service Portal. Provide the application name, required role, business justification, and manager approval when applicable. Access will be granted according to company security policies."
+  },
+  {
+    "id": "kb031",
+    "title": "Software installation failed",
+    "category": "Software",
+    "content": "Restart the laptop and retry the installation from the Self-Service Portal. Ensure that sufficient disk space is available and that you are connected to the corporate network or VPN. If the installation still fails, submit a ticket with the application name and error message."
+  },
+  {
+    "id": "kb032",
+    "title": "Application keeps crashing",
+    "category": "Software",
+    "content": "Close and reopen the application, then restart the laptop. Check whether updates are available through the Self-Service Portal. If the application continues to crash, record the error message and application version before contacting IT Support."
+  },
+  {
+    "id": "kb033",
+    "title": "Application is requesting administrator credentials",
+    "category": "Software",
+    "content": "Do not enter personal or unauthorized administrator credentials. Some software installations require elevated permissions. Submit an installation request through the IT Service Portal if the application is approved for corporate use."
+  },
+  {
+    "id": "kb034",
+    "title": "Computer storage is almost full",
+    "category": "Hardware",
+    "content": "Open Windows Storage settings to identify applications and files using disk space. Remove unnecessary temporary files and empty the recycle bin. Do not delete corporate files unless you are certain they are no longer required. Contact IT Support if additional storage is needed."
+  },
+  {
+    "id": "kb035",
+    "title": "Windows update is stuck",
+    "category": "Software",
+    "content": "Keep the laptop connected to power and the corporate network while the update is running. Restart the laptop if Windows provides a restart option. If the update remains stuck for an extended period, contact IT Support rather than interrupting the update process repeatedly."
+  },
+  {
+    "id": "kb036",
+    "title": "Laptop cannot boot",
+    "category": "Hardware",
+    "content": "Connect the laptop to its power adapter and wait several minutes before trying again. Disconnect external USB devices and restart the laptop. If the device still does not boot or displays an error message, contact IT Support for hardware diagnostics."
+  },
+  {
+    "id": "kb037",
+    "title": "Blue screen error on Windows",
+    "category": "Hardware",
+    "content": "Record the error code displayed on the blue screen and restart the laptop. Install any pending approved Windows and driver updates. If blue screen errors occur repeatedly, submit a hardware support ticket with the error code and approximate time of occurrence."
+  },
+  {
+    "id": "kb038",
+    "title": "Printer prints blank pages",
+    "category": "Hardware",
+    "content": "Check the printer's toner or ink level and verify that the correct printer is selected. Print a test page from the printer settings. If the printer continues to produce blank pages, the cartridge or print driver may need replacement or reinstallation."
+  },
+  {
+    "id": "kb039",
+    "title": "Printer shows offline",
+    "category": "Hardware",
+    "content": "Confirm that the printer is powered on and connected to the corporate network. In Windows printer settings, verify that the correct printer is selected and that 'Use Printer Offline' is disabled. Restart the print spooler service if necessary."
+  },
+  {
+    "id": "kb040",
+    "title": "How to report a suspected phishing email",
+    "category": "Security",
+    "content": "Do not click links, open attachments, or reply to a suspicious email. Use the company's Report Phishing option in Outlook to submit the message to the security team. If you already clicked a suspicious link or entered credentials, contact IT Security immediately."
+  },
+  {
+    "id": "kb041",
+    "title": "Lost company laptop",
+    "category": "Security",
+    "content": "Report a lost company laptop to IT Security immediately. Provide the device asset number, approximate location where it was lost, and the time it was last seen. Do not attempt to locate or recover the device yourself if doing so would create a safety risk."
+  },
+  {
+    "id": "kb042",
+    "title": "Lost company mobile phone",
+    "category": "Security",
+    "content": "Report the lost company phone to IT Support or Security immediately so the device can be remotely protected or disabled. If available, use the approved device-management portal to mark the device as lost."
+  },
+  {
+    "id": "kb043",
+    "title": "Suspicious activity on company account",
+    "category": "Security",
+    "content": "If you notice unexpected login alerts, password changes, or other suspicious activity, immediately change your corporate password using the approved password portal and contact IT Security. Do not share verification codes with anyone."
+  },
+  {
+    "id": "kb044",
+    "title": "Request a new laptop",
+    "category": "Hardware",
+    "content": "Submit a hardware request through the IT Service Portal. Include the reason for replacement, current device asset number, and manager approval if required. IT will review the request based on device condition and business requirements."
+  },
+  {
+    "id": "kb045",
+    "title": "Request a laptop repair",
+    "category": "Hardware",
+    "content": "Create a hardware support ticket describing the issue and include the laptop asset number. Provide any error messages and steps already attempted. IT Support will determine whether remote troubleshooting, repair, or device replacement is required."
+  },
+  {
+    "id": "kb046",
+    "title": "How to connect to a wireless headset",
+    "category": "Hardware",
+    "content": "Turn on the headset and place it into pairing mode. Open Windows Bluetooth settings and select Add Device. Choose the headset from the available devices and complete the pairing process. If it does not appear, restart Bluetooth and try again."
+  },
+  {
+    "id": "kb047",
+    "title": "Remote desktop connection failed",
+    "category": "Network",
+    "content": "Confirm that you are connected to the corporate VPN before attempting remote desktop access. Verify the computer name and your corporate credentials. If the target computer is offline or remote desktop access is disabled, contact IT Support."
+  },
+  {
+    "id": "kb048",
+    "title": "Access denied to company website",
+    "category": "Access",
+    "content": "Confirm that you are using the corporate network or VPN if the website requires internal access. Clear the browser cache and retry. If access is still denied, submit an access request with the website address and business justification."
+  },
+  {
+    "id": "kb049",
+    "title": "Browser keeps redirecting to login page",
+    "category": "Software",
+    "content": "Clear the browser cookies and cached credentials for the affected company website. Close and reopen the browser, then sign in again. If the issue continues, try the site in an approved alternative browser and contact IT Support."
+  },
+  {
+    "id": "kb050",
+    "title": "How to contact IT Support",
+    "category": "Support",
+    "content": "For technical issues, submit a ticket through the IT Service Portal. Include a clear description of the problem, affected application or device, error messages, and troubleshooting steps already attempted. For critical security incidents, contact the IT Security team immediately using the emergency support channel."
+  }
+
+]
