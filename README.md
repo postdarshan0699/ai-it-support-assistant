@@ -83,6 +83,90 @@ The application also maintains a shared `AgentState`. This allows information su
 
 ---
 
+## 3. Project Structure
+
+```
+ai-it-support-assistant/
+├── app.py                     # Streamlit UI — entry point
+├── config.py                  # Loads settings and builds the LLM/embeddings clients
+├── requirements.txt
+├── runtime.txt                # Pins the Python version for Streamlit deployment
+├── .env.example                # Template for local API keys (never the real keys)
+├── data/
+│   ├── knowledge_base.json    # IT knowledge base articles
+│   └── tickets.json           # Sample tickets, used as a lightweight ticket "database"
+└── src/
+    ├── db.py                  # Reads and writes the JSON ticket data
+    ├── tools/
+    │   ├── knowledge_search.py   # Tool 1 — vector search over the knowledge base
+    │   ├── vector_store.py       # Builds the FAISS index used by knowledge_search
+    │   ├── ticket_lookup.py      # Tool 2 — finds existing tickets
+    │   └── ticket_creation.py    # Tool 3 — creates a new ticket, with a duplicate check
+    └── graph/
+        ├── state.py            # Defines the shared AgentState
+        ├── schemas.py           # Pydantic schema for the intent classification output
+        └── build_graph.py       # Builds the LangGraph — nodes, edges, and routing
+```
+
+I kept the tools, the graph logic, and the UI in separate files on purpose. It made it much easier to test one tool at a time without needing to run the whole Streamlit app, and it matches the "modular code" requirement from the brief.
+
+## 4. Setup
+
+**1. Clone the repository and create a virtual environment**
+```bash
+git clone https://github.com/postdarshan0699/ai-it-support-assistant.git
+cd ai-it-support-assistant
+python -m venv venv
+venv\Scripts\activate        # Windows
+source venv/bin/activate     # macOS/Linux
+```
+
+**2. Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**3. Add API keys**
+
+For local development, copy `.env.example` to `.env` and fill in your own key:
+```
+LLM_PROVIDER=gemini
+GOOGLE_API_KEY=your-key-here
+GOOGLE_MODEL=gemini-2.5-flash
+```
+`.env` is listed in `.gitignore` and is never committed — only `.env.example`, which has no real keys in it, is tracked.
+
+For the deployed version, the same values are stored in Streamlit's own secrets manager instead of a `.env` file, so the key never has to exist in the repository at all.
+
+## 5. How to Run
+
+```bash
+streamlit run app.py
+```
+This opens the chat interface at `http://localhost:8501`. The deployed version runs the same `app.py` on Streamlit Community Cloud, reading its secrets from Streamlit's dashboard instead of a local file.
+
+## 6. Sample I/O
+
+**Input:** *"My printer isn't working, please log a ticket."*
+**Agent:** *"Could you provide your employee ID? I need that before I can help further."*
+**Input:** *"EMP9999"*
+**Agent:** *"I've created ticket TCK-1004 for your printer issue. It's currently marked as Open."*
+
+**Input:** *"I forgot my VPN password, how do I change it?"*
+**Agent:** retrieves the "How to reset your VPN password" article from the vector store and explains the reset steps, even though the wording doesn't match the article title.
+
+## 7. The Three Tools
+
+The agent has three tools available, and `classify_intent` decides which one to call:
+
+- **Knowledge Search** — searches the IT knowledge base using the vector store described in Section 10. Used for "how do I..." style questions.
+- **Ticket Lookup** — checks `data/tickets.json` for existing tickets, filtered by employee ID and/or issue keyword. Used for "what's the status of..." questions.
+- **Ticket Creation** — creates a new ticket after checking the employee's open tickets for a similar existing issue, so the same problem doesn't get logged twice.
+
+Each tool is a plain Python function with no LLM call inside it — the LLM's only job is deciding *which* tool to use, not doing the tool's work itself.
+
+---
+
 ## 8. Technologies Used
 
 The main technologies used in this project are:
